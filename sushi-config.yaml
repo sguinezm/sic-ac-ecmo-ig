@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: cardio.ig
-canonical: https://centrocardiovascular.cl
+canonical: https://centrocardiovascular.cl/ecmo
 name: CardioIG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI

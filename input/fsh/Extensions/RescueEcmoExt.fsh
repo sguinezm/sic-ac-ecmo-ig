@@ -10,7 +10,7 @@ Description: "Se indica el proceso de ECMO de rescate"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-* . ^short = "RescueEcmoExt"
+* . ^short = "Se indica el proceso de ECMO de rescate"
 * . 0..1
 * . ^definition = "Se indica el proceso de ECMO de rescate"
 * value[x] 0..1

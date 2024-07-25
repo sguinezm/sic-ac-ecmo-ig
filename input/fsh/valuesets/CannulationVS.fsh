@@ -1,8 +1,7 @@
-
-ValueSet: PumpVS
-Id: PumpVS
-Title: "Bomba"
-Description: "Detalles de la bomba utilizada en el procedimiento"
+ValueSet: CannulationVS
+Id: CannulationVS
+Title: "Canulación"
+Description: "Detalles de la canulación"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -13,6 +12,6 @@ Description: "Detalles de la bomba utilizada en el procedimiento"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 
-* include codes from system PumpCS
+* include codes from system CannulationCS
 
 

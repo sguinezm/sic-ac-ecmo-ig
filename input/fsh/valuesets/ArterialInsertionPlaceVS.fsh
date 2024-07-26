@@ -1,8 +1,8 @@
 Alias: $snomed = http://snomed.info/sct
-ValueSet: VenousInsertionPlaceVS
-Id: VenousInsertionPlaceVS
-Title: "Lugar de inserción venosa"
-Description: "Detalles del lugar de inserción venosa"
+ValueSet: ArterialInsertionPlaceVS
+Id: ArterialInsertionPlaceVS
+Title: "Lugar de inserción arterial"
+Description: "Detalles del lugar de inserción arterial"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -14,6 +14,7 @@ Description: "Detalles del lugar de inserción venosa"
 
 * $snomed#14414005 "peripheral"
 * $snomed#233527006 "central"
-
+* $snomed#83419000 "Femoral"
+* $snomed#68705008 "Axilar"
 
 

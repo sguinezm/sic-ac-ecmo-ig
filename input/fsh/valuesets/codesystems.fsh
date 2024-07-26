@@ -82,6 +82,22 @@ Description: "Se detalla el tipo de bomba utilizada en ECMO"
 * #4 "double_lumen"
 
 
+CodeSystem: EcmoDetailsCS
+Id: EcmoDetailsCS
+Title: "Detalles de ECMO"
+Description: "Se detalla el procedimiento "
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-22"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #1 "weaning_from_support"
+* #2 "died_in_support"
 
 
 

@@ -14,4 +14,4 @@ Description: "Se indica el lugar de perfusión"
 * . 0..1
 * . ^definition = "Se indica el lugar de perfusión"
 * value[x] 0..1
-* value[x] only boolean
+* value[x] only string

@@ -1,8 +1,8 @@
 Alias: $snomed = http://snomed.info/sct
-ValueSet: TypeOfSupportVS
-Id: TypeOfSupportVS
-Title: "Tipo de asistencia en el procedimiento"
-Description: "Detalles del tipo de asistencia en el procedimiento"
+ValueSet: PatientStatusAfterProcedureVS
+Id: PatientStatusAfterProcedureVS
+Title: "Observación del estado del paciente luego del procedimiento"
+Description: "Se detalle la Observación del estado del paciente luego del procedimiento"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -12,10 +12,7 @@ Description: "Detalles del tipo de asistencia en el procedimiento"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* $snomed#786451004 
-* $snomed#786453001 
-* $snomed#7864530011 
-* $snomed#7864530012 
-* $snomed#1306306002 
-* $snomed#1306305003 
+* $snomed#306571000
+* $snomed#419099009
+
 

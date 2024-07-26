@@ -12,8 +12,8 @@ Description: "Detalles del lugar de inserción venosa"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* $snomed#14414005 "peripheral"
-* $snomed#233527006 "central"
+* $snomed#14414005
+* $snomed#233527006 
 
 
 

@@ -12,8 +12,8 @@ Description: "Detalles del lugar de inserción venosa periférica"
 * ^contact.telecom.value = "jjgondiaz@gmail.com"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* $snomed#83419000 "Femoral"
-* $snomed#68705008 "Axilar"
+* $snomed#83419000 
+* $snomed#68705008 
 
 
 

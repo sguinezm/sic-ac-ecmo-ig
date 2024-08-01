@@ -12,6 +12,6 @@ Title: "VenousInsertionPlaceObservation"
 * code ^definition = "Observación para la el lugar de la inserción venosa"
 
 * value[x] only CodeableConcept
-* code from VenousInsertionPlaceVS
+* value[x] from VenousInsertionPlaceVS
 
 

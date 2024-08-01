@@ -11,6 +11,6 @@ Title: "PatientStatusAfterProcedureObservation"
 * code ^definition = "Se detalla la observación del estado del paciente luego del procedimiento"
 
 * value[x] only CodeableConcept
-* code from PatientStatusAfterProcedureVS
+* value[x] from PatientStatusAfterProcedureVS
 
 

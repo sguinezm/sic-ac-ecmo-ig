@@ -12,7 +12,7 @@ Title: "PumpObvservation"
 * code ^definition = "PumpObvservation"
 
 * value[x] only CodeableConcept
-* code from PumpVS
+* value[x] from PumpVS
 * value[x].text 0..1 MS 
 * value[x].text ^short = "Indicar valor cuando el concepto del valueset utilizado es other value"
 

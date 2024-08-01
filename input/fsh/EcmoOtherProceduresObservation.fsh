@@ -12,7 +12,7 @@ Title: "EcmoOtherProceduresObservation"
 * code ^definition = "Observación de otros procedimientos durante ECMO"
 
 * value[x] only CodeableConcept
-* code from EcmoOtherProceduresVS
+* value[x] from EcmoOtherProceduresVS
 * value[x].text 0..1 MS 
 * value[x].text ^short = "Indicar valor cuando el concepto del valueset utilizado es other value"
 

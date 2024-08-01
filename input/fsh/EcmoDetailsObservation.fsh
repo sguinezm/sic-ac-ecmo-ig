@@ -12,6 +12,6 @@ Title: "EcmoDetailsObservation"
 * code ^definition = "Observación de detalles de ECMO"
 
 * value[x] only CodeableConcept
-* code from EcmoDetailsVS
+* value[x] from EcmoDetailsVS
 
 

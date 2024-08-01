@@ -12,6 +12,6 @@ Title: "DestinationObservation"
 * code ^definition = "Observación de detalles de la destinación"
 
 * value[x] only CodeableConcept
-* code from DestinationVS
+* value[x] from DestinationVS
 
 

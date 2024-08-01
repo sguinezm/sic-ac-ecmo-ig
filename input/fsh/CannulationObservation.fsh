@@ -12,6 +12,6 @@ Title: "CannulationObservation"
 * code ^definition = "Observación para la canulación"
 
 * value[x] only CodeableConcept
-* code from CannulationVS
+* value[x] from CannulationVS
 
 

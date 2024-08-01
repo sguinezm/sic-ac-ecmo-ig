@@ -12,6 +12,6 @@ Title: "ArterialInsertionPlaceObservation"
 * code ^definition = "Observación para la el lugar de la inserción arterial"
 
 * value[x] only CodeableConcept
-* code from ArterialInsertionPlaceVS
+* value[x] from ArterialInsertionPlaceVS
 
 

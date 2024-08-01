@@ -12,6 +12,6 @@ Title: "ArterialPeripheralInsertionRouteObservation"
 * code ^definition = "Observación para la el lugar de la inserción arterial"
 
 * value[x] only CodeableConcept
-* code from ArterialPeripheralInsertionRouteVS
+* value[x] from ArterialPeripheralInsertionRouteVS
 
 

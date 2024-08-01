@@ -12,7 +12,7 @@ Title: "ProcedureAssistance"
 * code ^definition = "ProcedureAssistance"
 
 * value[x] only CodeableConcept
-* code from ProcedureAssistanceVS
+* value[x] from ProcedureAssistanceVS
 * value[x].text 0..1 MS 
 * value[x].text ^short = "Indicar valor cuando el concepto del valueset utilizado es other value"
 

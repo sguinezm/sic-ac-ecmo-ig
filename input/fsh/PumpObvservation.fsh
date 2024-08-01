@@ -1,7 +1,7 @@
 Alias: $snomed = http://snomed.info/sct
 
 
-Profile: PumpObvservation
+Profile: PumpObservation
 Parent: Observation
 Description: "Observación para indicar bomba utilizada en el procedimiento"
 

@@ -99,6 +99,31 @@ Description: "Se detalla el procedimiento "
 * #1 "weaning_from_support"
 * #2 "died_in_support"
 
+CodeSystem: TypeOfSupportCS
+Id: TypeOfSupportCS
+Title: "Detalles del tipo de procedimiento"
+Description: "Se detalla el tipo procedimiento "
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^date = "2024-04-22"
+* ^contact.name = "Jaime González"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "jjgondiaz@gmail.com"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #1 "veno arterial"
+* #2 "veno venous"
+* #3 "V-A-V"
+* #4 "V-V-A"
+* #5 "right ventricular support"
+* #6 "left ventricular support"
+
+
+
+
+
 
 
 

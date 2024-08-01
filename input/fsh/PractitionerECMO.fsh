@@ -4,11 +4,11 @@ Alias: $CodigoPaises = https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/Co
 Alias: $VSTiposDocumentos = https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocumentos
 
 
-Profile: PractitionerCardio
+Profile: PractitionerECMO
 Parent: Practitioner
 Description: "Recurso que representa al cirujano en la plataforma de cirugías cardíacas."
 
-Title: "PractitionerCardio"
+Title: "PractitionerECMO"
 
 * name ^slicing.discriminator.type = #value
 * name ^slicing.discriminator.path = "use"

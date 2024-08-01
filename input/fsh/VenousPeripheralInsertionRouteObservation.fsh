@@ -12,6 +12,6 @@ Title: "VenousPeripheralInsertionRouteObservation"
 * code ^definition = "Observación para la el lugar de la inserción venosa periférica"
 
 * value[x] only CodeableConcept
-* code from VenousPeripheralInsertionRouteVS
+* value[x] from VenousPeripheralInsertionRouteVS
 
 

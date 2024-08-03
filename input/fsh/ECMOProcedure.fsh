@@ -8,9 +8,10 @@ Description: "Registro del procedimiento de ECMO"
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
-* code.coding 0..2
+* code.coding 0..3
 * code.coding contains tipo_soporte 1..1 and 
-                       fecha 1..1
+fallo_respiratorio 0..1 and 
+ fallo_cardiaco 0..1 and PCR 0..1
 
 * code.coding[tipo_soporte].system = $snomed
 * code.coding[tipo_soporte].code = $snomed#40701008
@@ -18,11 +19,26 @@ Description: "Registro del procedimiento de ECMO"
 * outcome from TypeOfSupportVS (required)
 
 
+* code.coding[fallo_respiratorio].system = $snomed
+* code.coding[fallo_respiratorio].code = $snomed#409622000
+* code.coding[fallo_respiratorio].display = "Fallo respiratorio"
 
-* code.coding[fecha].system = $snomed
-* code.coding[fecha].code = $snomed#410672004
-* code.coding[fecha].display = "Cannulation date"
+* code.coding[fallo_cardiaco].system = $snomed
+* code.coding[fallo_cardiaco].code = $snomed#84114007
+* code.coding[fallo_cardiaco].display = "Fallo cardíaco"
 
+* code.coding[PCR].system = $snomed
+* code.coding[PCR].code = $snomed#702675006
+* code.coding[PCR].display = "PCR"
+
+
+
+* performed[x] only dateTime
+
+
+
+
+                       
 
 
 

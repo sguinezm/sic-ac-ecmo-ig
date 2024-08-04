@@ -9,9 +9,7 @@ Description: "Registro del procedimiento de ECMO"
 * code.coding ^slicing.discriminator.path = "code"
 * code.coding ^slicing.rules = #open
 * code.coding 0..3
-* code.coding contains tipo_soporte 1..1 and 
-fallo_respiratorio 0..1 and 
- fallo_cardiaco 0..1 and PCR 0..1
+* code.coding contains tipo_soporte 0..1
 
 * code.coding[tipo_soporte].system = $snomed
 * code.coding[tipo_soporte].code = $snomed#40701008
@@ -19,19 +17,25 @@ fallo_respiratorio 0..1 and
 * outcome from TypeOfSupportVS (required)
 
 
-* code.coding[fallo_respiratorio].system = $snomed
-* code.coding[fallo_respiratorio].code = $snomed#409622000
-* code.coding[fallo_respiratorio].display = "Fallo respiratorio"
+* reasonCode ^slicing.discriminator.type = #value
+* reasonCode ^slicing.discriminator.path = "coding.code"
+* reasonCode ^slicing.rules = #open
+* reasonCode 1..3
+* reasonCode contains fallo_respiratorio 0..1 and 
+                       fallo_cardiaco 0..1 and 
+                       PCR 0..1
 
-* code.coding[fallo_cardiaco].system = $snomed
-* code.coding[fallo_cardiaco].code = $snomed#84114007
-* code.coding[fallo_cardiaco].display = "Fallo cardíaco"
+* reasonCode[fallo_respiratorio].coding.system = $snomed
+* reasonCode[fallo_respiratorio].coding.code = $snomed#409622000
+* reasonCode[fallo_respiratorio].coding.display = "Fallo respiratorio"
 
-* code.coding[PCR].system = $snomed
-* code.coding[PCR].code = $snomed#702675006
-* code.coding[PCR].display = "PCR"
+* reasonCode[fallo_cardiaco].coding.system = $snomed
+* reasonCode[fallo_cardiaco].coding.code = $snomed#84114007
+* reasonCode[fallo_cardiaco].coding.display = "Fallo cardíaco"
 
-
+* reasonCode[PCR].coding.system = $snomed
+* reasonCode[PCR].coding.code = $snomed#702675006
+* reasonCode[PCR].coding.display = "PCR"
 
 * performed[x] only dateTime
 

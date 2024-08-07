@@ -48,7 +48,7 @@ Description: "Registro del procedimiento de ECMO"
 
 
 
-* extension contains RescueEcmoExt named rescue_ecmo 1..1 and
-DistalReperfusionExt named distal_reperfusion 1..1 and 
- PerfusionPlaceExt named perfusion_place 1..1  and 
- EcmoDaysExt named ecmo_days 1..1
+* extension contains RescueEcmoExt named rescue_ecmo 0..1 and
+DistalReperfusionExt named distal_reperfusion 0..1 and 
+ PerfusionPlaceExt named perfusion_place 0..1  and 
+ EcmoDaysExt named ecmo_days 0..1

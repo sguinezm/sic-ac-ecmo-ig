@@ -1,3 +1,5 @@
+
+
 Extension: DistalReperfusionExt
 Id: DistalReperfusionExt
 Title: "Reperfusión distal"
@@ -15,3 +17,7 @@ Description: "Se describe reperfusión distal"
 * . ^definition = "Se describe reperfusión distal"
 * value[x] 0..1
 * value[x] only boolean
+
+
+
+

@@ -38,10 +38,7 @@ Description: "Registro del procedimiento de ECMO"
 * reasonCode[PCR].coding.display = "PCR"
 
 * performed[x] only dateTime
-
-
-
-
+* performed[x] ^short = "Fecha de canulacion"
                        
 
 
@@ -49,6 +46,6 @@ Description: "Registro del procedimiento de ECMO"
 
 
 * extension contains RescueEcmoExt named rescue_ecmo 0..1 and
-DistalReperfusionExt named distal_reperfusion 0..1 and 
- PerfusionPlaceExt named perfusion_place 0..1  and 
- EcmoDaysExt named ecmo_days 0..1
+DistalReperfusionPerfusionExt named distal_reperfusion 0..1 and 
+ EcmoDaysExt named ecmo_days 0..1 and PrimaryDiagnosisExt named primary_diagnosis 0..1
+ and TypeOfSupportExt named type_support 0..1

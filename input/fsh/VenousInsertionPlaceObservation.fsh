@@ -14,12 +14,12 @@ Title: "VenousInsertionPlaceObservation"
 * code.coding[central].code 0..1
 * code.coding[central].system = $snomed
 * code.coding[central].code = $snomed#233527006 
-* code.coding[central].code ^short = "Indica cuando la canulación fue en el lugar central"
+* code.coding[central] ^short = "Indica cuando la canulación fue en el lugar central"
 
 * code.coding[peripheral].code 0..1
 * code.coding[peripheral].system = $snomed
 * code.coding[peripheral].code = $snomed#233520008 
-* code.coding[peripheral].code ^short = "Indica cuando la canulación fue en el lugar periférico"
+* code.coding[peripheral] ^short = "Indica cuando la canulación fue en el lugar periférico"
 
 
 

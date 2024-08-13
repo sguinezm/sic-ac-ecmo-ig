@@ -27,6 +27,14 @@ Description: "Cuestionario utilizado para conocer el destino del paciente luego 
 * item[patientStatus].answer.value[x] from PatientStatusAfterProcedureVS
 
 * item[otherProcedures].linkId = "other_procedures"
-* item[otherProcedures].answer 0..1
-* item[otherProcedures].answer.value[x] only Coding
-* item[otherProcedures].answer.value[x] from EcmoOtherProceduresVS
+* item[otherProcedures].answer 1..2
+* item[otherProcedures].answer.value[x] ^slicing.discriminator.type = #type
+* item[otherProcedures].answer.value[x] ^slicing.discriminator.path = "$this"
+* item[otherProcedures].answer.value[x] ^slicing.rules = #open
+
+* item[otherProcedures].answer.valueCoding ^short = "Cuando se agrega otro valor" 
+* item[otherProcedures].answer.valueCoding 0..1
+* item[otherProcedures].answer.valueCoding from EcmoOtherProceduresVS
+
+* item[otherProcedures].answer.valueString 0..1 
+* item[otherProcedures].answer.valueString ^short = "Campo a completar cuando se debe completar otro valor" 

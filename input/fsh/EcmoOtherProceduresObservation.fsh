@@ -6,6 +6,8 @@ Parent: Observation
 Description: "Observación de otros procedimientos durante ECMO"
 
 Title: "EcmoOtherProceduresObservation"
+ 
+* ^purpose = "Esta observación describe cada uno de los procedimientos durante ECMO"
 
 * code 1..1
 * code = $snomed#257556004

@@ -27,11 +27,11 @@ Description: "Cuestionario utilizado para conocer el destino del paciente luego 
 * item[patientStatus].answer.value[x] from PatientStatusAfterProcedureVS
 
 * item[otherProcedures].linkId = "other_procedures"
-* item[otherProcedures].answer 1..2
+* item[otherProcedures].answer 0..6
 * item[otherProcedures].answer ^slicing.discriminator.type = #type
 * item[otherProcedures].answer ^slicing.discriminator.path = "$this"
 * item[otherProcedures].answer ^slicing.rules = #open
-* item[otherProcedures].answer contains cod 1..1 MS and otherValue 0..1 MS
+* item[otherProcedures].answer contains cod 0..5 MS and otherValue 0..1 MS
 
 * item[otherProcedures].answer[cod].value[x] only Coding
 * item[otherProcedures].answer[cod].value[x] 1..1 MS

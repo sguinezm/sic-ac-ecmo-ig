@@ -35,9 +35,9 @@ Description: "Cuestionario utilizado para conocer el destino del paciente luego 
 
 * item[otherProcedures].answer[cod].value[x] only Coding
 * item[otherProcedures].answer[cod].value[x] 1..1 MS
-* item[otherProcedures].answer[cod].value[x] ^short = "Cuando se agrega otro valor" 
+* item[otherProcedures].answer[cod].value[x] ^short = "Selección de valores para indicar otros procedimientos" 
 * item[otherProcedures].answer[cod].value[x] from EcmoOtherProceduresVS
 
 * item[otherProcedures].answer[otherValue].value[x] only string
 * item[otherProcedures].answer[otherValue].value[x] 1..1
-* item[otherProcedures].answer[otherValue].value[x] ^short = "Campo a completar cuando se debe completar otro valor" 
+* item[otherProcedures].answer[otherValue].value[x] ^short = "Cuando se selecciona otro valor, ingresar el valor aquí." 

@@ -64,4 +64,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[ECMOProcedure].entry 0..*
 * section[ECMOProcedure].entry contains 
                                         ArterialCannulaDiameterObservation 0..1 and 
-                                        ArterialInsertionPlaceObservation 0..1
+                                        ArterialInsertionPlaceObservation 0..1 and 
+                                        CannulationObservation 0..1 and 
+                                        DestinationObservation 0..1 and 
+                                        EcmoDetailsObservation 0..1 
+

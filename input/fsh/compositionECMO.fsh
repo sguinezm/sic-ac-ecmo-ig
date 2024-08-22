@@ -23,7 +23,8 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section.code 1..1 MS
 //* section.code from ECMOCompositionSectionCodesVS (required)
 * section contains
-    PatientSection 0..1 MS 
+    PatientSection 0..1 MS and 
+    ECMOProcedure 0..1 
 
 * section[PatientSection] ^short = "Sección del paciente"
 * section[PatientSection] ^definition = "Información acerca del paciente"
@@ -49,3 +50,18 @@ Description: "Recurso que contiene las referencias identificadas por secciones a
 * section[PatientSection].entry[bloodTypeObservation] ^short = "Referencia  al recurso que contiene la observación que hace referencia al tipo de sangre del paciente"
 * section[PatientSection].entry[emergencyContact] only Reference(RelatedPerson)
 * section[PatientSection].entry[emergencyContact] ^short = "Se referencia a las personas que pueden ser contactadas al momento de una emergencia"
+
+
+* section[ECMOProcedure] ^short = "Sección del procedimiento ECMO"
+* section[ECMOProcedure] ^definition = "Información acerca del procedimiento"
+* section[ECMOProcedure].code = #2
+* section[ECMOProcedure] 1..1
+* section[ECMOProcedure].focus only Reference(ECMOProcedure)
+
+* section[ECMOProcedure].entry ^slicing.discriminator.type = #profile
+* section[ECMOProcedure].entry ^slicing.discriminator.path = "resolve()"
+* section[ECMOProcedure].entry ^slicing.rules = #open
+* section[ECMOProcedure].entry 0..*
+* section[ECMOProcedure].entry contains 
+                                        ArterialCannulaDiameterObservation 0..1 and 
+                                        ArterialInsertionPlaceObservation 0..1

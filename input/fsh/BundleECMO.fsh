@@ -26,7 +26,11 @@ Description: "Recurso que permite compartir la información del procedimienti"
                  paciente 1..1    and 
                  tipoSangre 1..1 and
                  altura 0..1 and 
-                 peso 0..1 
+                 peso 0..1 and 
+                 asistenciaProcedimiento 0..1 and 
+                 bomba 0..1 and
+                 canula 0..1 and 
+                 lugarDeInsersionVenosa 0..1
 
 
 
@@ -55,3 +59,19 @@ Description: "Recurso que permite compartir la información del procedimienti"
 * entry[peso] ^short = "Peso de la persona"
 * entry[peso].resource only observation-bodyweight
 * entry[peso].resource ^short = "Se indica el peso de la persona"
+
+* entry[asistenciaProcedimiento] ^short = "Asistencia de procedimiento"
+* entry[asistenciaProcedimiento].resource only ProcedureAssistanceObservation
+* entry[asistenciaProcedimiento].resource ^short = "Se indica la asistencia de procedimiento"
+
+* entry[bomba] ^short = "Detalles de la bomba durante ECMO"
+* entry[bomba].resource only PumpObservation
+* entry[bomba].resource ^short = "Se indican detalles de la bomba durante el procedimiento"
+
+* entry[canula] ^short = "Detalles de la canula"
+* entry[canula].resource only CannulationObservation
+* entry[canula].resource ^short = "Se indican detalles de la canula"
+
+* entry[lugarDeInsersionVenosa] ^short = "Lugar de inserción venosa"
+* entry[lugarDeInsersionVenosa].resource only VenousInsertionPlaceObservation
+* entry[lugarDeInsersionVenosa].resource ^short = "Se indican detalles del lugar donde se produjo la inserció venosa"

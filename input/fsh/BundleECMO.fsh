@@ -4,7 +4,7 @@ Profile: BundleECMO
 Parent: Bundle
 Id: BundleECMO
 Title: "Bundle ECMO"
-Description: "Recurso que permite compartir la información del procedimienti"
+Description: "Recurso que permite compartir la información del procedimiento"
 
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft

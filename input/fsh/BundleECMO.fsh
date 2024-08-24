@@ -30,7 +30,10 @@ Description: "Recurso que permite compartir la información del procedimienti"
                  asistenciaProcedimiento 0..1 and 
                  bomba 0..1 and
                  canula 0..1 and 
-                 lugarDeInsersionVenosa 0..1
+                 lugarDeInsercionVenosa 0..1 and 
+                 diametroCanulaVenosa 0..1 and 
+                 lugarDeInsercionArterial 0..1 and 
+                 diametroCanulaArterial 0..1
 
 
 
@@ -72,6 +75,18 @@ Description: "Recurso que permite compartir la información del procedimienti"
 * entry[canula].resource only CannulationObservation
 * entry[canula].resource ^short = "Se indican detalles de la canula"
 
-* entry[lugarDeInsersionVenosa] ^short = "Lugar de inserción venosa"
-* entry[lugarDeInsersionVenosa].resource only VenousInsertionPlaceObservation
-* entry[lugarDeInsersionVenosa].resource ^short = "Se indican detalles del lugar donde se produjo la inserció venosa"
+* entry[lugarDeInsercionVenosa] ^short = "Lugar de inserción venosa"
+* entry[lugarDeInsercionVenosa].resource only VenousInsertionPlaceObservation
+* entry[lugarDeInsercionVenosa].resource ^short = "Se indican detalles del lugar donde se produjo la inserción venosa"
+
+* entry[diametroCanulaVenosa] ^short = "Diámetro de canula venosa"
+* entry[diametroCanulaVenosa].resource only VenousCannulaDiameterObservation
+* entry[diametroCanulaVenosa].resource ^short = "Se indican detalles del diámetro de la canula venosa"
+
+* entry[lugarDeInsercionArterial] ^short = "Lugar de inserción arterial"
+* entry[lugarDeInsercionArterial].resource only ArterialInsertionPlaceObservation
+* entry[lugarDeInsercionArterial].resource ^short = "Se indican detalles del lugar donde se produjo la inserción artierial"
+
+* entry[diametroCanulaArterial] ^short = "Diámetro de canula arterial"
+* entry[diametroCanulaArterial].resource only ArterialInsertionPlaceObservation
+* entry[diametroCanulaArterial].resource ^short = "Se indican detalles del diámetro de la canula venosa"

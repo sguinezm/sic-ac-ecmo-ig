@@ -1,6 +1,6 @@
 /* FHIR family-specific colors */
 :root {
-  --navbar-bg-color: #FAB031; /* 2. Header container color */
-  --footer-container-bg-color: #FAB031; /* 4. Footer container color */
-  --btn-hover-color: #FAB031;  /* 6. Menu button hover color */
+  --navbar-bg-color: #3177fa; /* 2. Header container color */
+  --footer-container-bg-color: #3177fa; /* 4. Footer container color */
+  --btn-hover-color: #3177fa;  /* 6. Menu button hover color */
 }
